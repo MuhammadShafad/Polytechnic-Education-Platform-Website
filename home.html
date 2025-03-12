@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyPedia</title>
+    <link rel="stylesheet" href="home.css">
+
+    <!--FavIcon-->
+    <link rel="shortcut icon" href="./images/faviconn.webp" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/34a294b7be.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bokor&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <!--Navbar-->
+        <div class="header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <!-- Brand -->
+                    <a class="navbar-brand ms-5" href="./home.html" id="nav-head">Poly<span>Pedia</span></a>
+
+                    <!-- Toggler for responsive menu -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navbar Menu -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <!-- Home -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="./home.html">HOME</a>
+                            </li>
+
+                            <!-- About -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">ABOUT</a>
+                            </li>
+
+                            <!-- Dropdown for Departments -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="departmentsDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    DEPARTMENTS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                                    <li><a class="dropdown-item" href="./departments/computer/computer.html">Computer
+                                            Engineering</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./departments/electronics/electronics.html">Electronics
+                                            Engineering</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./departments/mechanical/mechanical.html">Mechanical Engineering</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./departments/civil/civil.html">Civil
+                                            Engineering</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Activity Point -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="./activitypoint.html">ACTIVITY POINT</a>
+                            </li>
+
+                            <!-- Contact -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">CONTACT</a>
+                            </li>
+                            <!-- Logout -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <!--Home First Section-->
+        <div class="home-first-section" id="home">
+            <section class="hero-section container mt-5">
+                <div class="content">
+                    <h1>Online Polytechnic Platform
+                        to Learn & Access Everything</h1>
+                    <p>In this website we are providing the notes, previous question papers,answer keys and youtube
+                        videos.</p>
+                    <div>
+                        <a href="#subject">
+                            <button class="btn border">Find Department <i class="fa-solid fa-arrow-right"></i></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="image-container col-lg-6 col-md-12 text-center">
+                    <img src="./images/banner-3-img-1.webp" alt="photo" class="img-fluid floating-image">
+                </div>
+            </section>
+        </div>
+
+        <!--Home Second Section-->
+        <section class="explore-section">
+            <div class="container">
+                <p class="section-subheading">More About Us</p>
+                <h2 class="section-heading">Explore Yourself In This Website</h2>
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="number">01</div>
+                            <div class="icon">
+                                <img src="./images/home21.png" alt="Icon">
+                            </div>
+                            <h5 class="card-title">Study Notes</h5>
+                            <p class="card-text">In this website you have to see the study notes based on your
+                                department.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="number">02</div>
+                            <div class="icon">
+                                <img src="./images/home22.png" alt="Icon" style="height: 73px;">
+                            </div>
+                            <h5 class="card-title">Question Papers</h5>
+                            <p class="card-text">In this website you have to see the previous year question papers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="number">03</div>
+                            <div class="icon">
+                                <img src="./images/home23.png" alt="Icon" style="height: 50px;">
+                            </div>
+                            <h5 class="card-title">Youtube Videos</h5>
+                            <p class="card-text">In this website you have to see youtube videos for all the subjects.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="number">04</div>
+                            <div class="icon">
+                                <img src="./images/home24.png" alt="Icon">
+                            </div>
+                            <h5 class="card-title">Activity Points</h5>
+                            <p class="card-text">In this website you have to see the way of how to get the activity
+                                points.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Home Third Section-->
+        <div class="custom-container">
+            <div class="container content-wrapper row mt-4 mb-4">
+                <div class="col-md-6 image-section">
+                    <img src="./images/about-thumb-07.webp" alt="Educational Platform Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-section">
+                    <h2>PolyPedia educational platform is to provide all the resources for the students</h2>
+                    <p> PolyPedia is an easy-to-use web platform designed to help polytechnic students access all their
+                        study materials in one place. It offers department-specific notes, previous question papers,
+                        answer keys, and YouTube tutorials for each module. The platform covers all polytechnic
+                        departments, ensuring every student has the resources they need.</p>
+
+                    <p>In addition to academic content, PolyPedia also provides programming tutorials, job guidance, and
+                        information on workshops and activities to help students build skills for their future careers.
+                        With its simple design and comprehensive resources, PolyPedia makes learning easier and prepares
+                        students for success both academically and professionally.</p>
+                    <a href="#">
+                        <button class="browse-button">Browse All Branches</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Home Fourth Section-->
+        <div class="container py-5" id="subject">
+            <div class="header-section">
+                <div>
+                    <h6>Departments</h6>
+                    <h2>Subjects You Want to Learn</h2>
+                </div>
+                <a href="#" class="find-courses-btn">
+                    Find Subjects <span><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="./departments/computer/computer.html" style="text-decoration: none;">
+                        <div class="category-card">
+                            <div class="category-icon" style="text-decoration: none; color: black;"><i
+                                    class="fa-solid fa-computer"></i></div>
+                            <div class="category-info">
+                                <div class="category-title">Computer</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="./departments/electronics/electronics.html" style="text-decoration: none;">
+                        <div class="category-card">
+                            <div class="category-icon" style="text-decoration: none; color: black;"><i
+                                    class="fa-solid fa-lightbulb"></i></div>
+                            <div class="category-info">
+                                <div class="category-title">Electronics</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="./departments/mechanical/mechanical.html" style="text-decoration: none;">
+                        <div class="category-card">
+                            <div class="category-icon" style="text-decoration: none; color: black;"><i
+                                    class="fa-solid fa-car-battery"></i></div>
+                            <div class="category-info">
+                                <div class="category-title">Mechanical</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="./departments/civil/civil.html" style="text-decoration: none;">
+                        <div class="category-card">
+                            <div class="category-icon" style="text-decoration: none; color: black;"><i
+                                    class="fa-solid fa-building"></i></div>
+                            <div class="category-info">
+                                <div class="category-title">Civil</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="category-card">
+                            <div class="category-icon" style="text-decoration: none; color: black;"><i
+                                    class="fa-solid fa-print"></i></div>
+                            <div class="category-info">
+                                <div class="category-title">Printing</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="category-card">
+                            <div class="category-icon" style="text-decoration: none; color: black;"><i
+                                    class="fa-solid fa-car"></i></div>
+                            <div class="category-info">
+                                <div class="category-title">Automobile Engineering</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="#" style="text-decoration: none;">
+                        <div class="category-card">
+                            <div class="category-icon" style="text-decoration: none; color: black;"><i
+                                    class="fa-solid fa-toggle-on"></i></div>
+                            <div class="category-info">
+                                <div class="category-title">Electrical and Communication</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Home Fifth Section-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div style="text-align: center;" class="mb-5 mt-5">
+                <h1 style="font-size: 25px; font-weight:bold; color: #068550;">YOUTUBE VIDEOS</h1>
+            </div>
+            <div class="carousel-inner mb-5">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card w-75 ms-md-5 shadow-lg" id="ccard">
+                                <img src="./images/home41.jpg" class="card-img-top" alt="Youtube 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Polytechnic | Mathematics | semester 1</h5>
+                                    <a href="https://youtu.be/ePCxjw3EMho?si=muAdSipAq4rmJXl7" class="btn"
+                                        id="homefourthbtn">Watch Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card w-75 ms-md-5 shadow-lg" id="ccard">
+                                <img src="./images/home42.jpg" class="card-img-top" alt="YouTube 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">C PROGRAMMING | Part-1 | Introduction</h5>
+                                    <a a href="https://youtu.be/c64Mq4DBFfI?si=I4GimLuAJhkY8-3b" class="btn"
+                                        id="homefourthbtn">Watch Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card w-75 ms-md-5 shadow-lg" id="ccard">
+                                <img src="./images/home43.jpg" class="card-img-top" alt="Youtube 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Strength of Materials(SOM) Unit1</h5>
+                                    <a a href="https://youtu.be/oRrUov1uDzs?si=OAdCAnb5BADSMD31" class="btn"
+                                        id="homefourthbtn">Watch Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card w-75 ms-md-5 shadow-lg" id="ccard">
+                                <img src="./images/home44.jpg" class="card-img-top" alt="Youtube 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Building Construction | Lecture-1 |</h5>
+                                    <a a href="https://www.youtube.com/live/qrqzoEvKpcU?si=gO3ywpkQrb4mFWgl" class="btn"
+                                        id="homefourthbtn">Watch Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card w-75 ms-md-5 shadow-lg" id="ccard">
+                                <img src="./images/home45.jpg" class="card-img-top" alt="youtube 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Diploma in Printing Technology Course</h5>
+                                    <a a href="https://youtu.be/gIaBmL3FMTc?si=1D6zjNeFTecBW9_D" class="btn"
+                                        id="homefourthbtn">Watch Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card w-75 ms-md-5 shadow-lg" id="ccard">
+                                <img src="./images/home46.jpg" class="card-img-top" alt="Youtube 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic Structure of an Automobile Engineering
+                                    </h5>
+                                    <a a href="https://youtu.be/c3CalfdYZYw?si=ftzf82FLqg98yP1n" class="btn"
+                                        id="homefourthbtn">Watch Now</a>>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
+
+        <!--Home Sixth Section-->
+        <div class="container testimonial-section mt-5 ">
+            <h2>Feedback's From Our Users</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card" id="testcard">
+                        <div class="card-body text-center">
+                            <img src="./images/test1.jpeg" alt="Student Photo">
+                            <p>"PolyPedia has made my studies so much easier. As an Electrical Engineering student, I
+                                can now access all my notes, question papers, and YouTube videos in one place. The
+                                programming tutorials and career tips are also a big bonus. It’s saved me time and
+                                helped me stay organized!"</p>
+                            <div class="name">Alex Hailey</div>
+                            <div class="rating">
+                                <span>★★★★☆</span> (4.7)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card" id="testcard">
+                        <div class="card-body text-center">
+                            <img src="./images/test2.jpeg" alt="Student Photo">
+                            <p>"PolyPedia is the perfect resource for polytechnic students. As a Computer Science
+                                student, I love having all my materials and extra programming tutorials in one place.
+                                The career advice and workshops section has really helped me focus on my future"</p>
+                            <div class="name">Sreenandha H</div>
+                            <div class="rating">
+                                <span>★★★★☆</span> (4.7)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer Section-->
+        <footer class="footer text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>PolyPedia</h4>
+                        <p>Polytechnic Education focused website provides the
+                            all study materials offered.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/fab.fivez_?igsh=MXJzaXlqdzJic2N5"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./departments/computer/computer.html">Courses</a></li>
+                            <li><a href="./departments/computer/computer.html">Department</a></li>
+                            <li><a href="./departments/computer/s1maths.html">Subject Details</a></li>
+                            <li><a href="./departments/computer/s1chemistry.html">Notes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Support</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./contact.html">Contact Now</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Purchase Guide</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 newsletter">
+                        <h5>Newsletter</h5>
+                        <p>Subscribe to our newsletter to get the latest news &
+                            updates.</p>
+                        <input type="email" placeholder="Email address">
+                        <button class="mt-2 border rounded-3">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom ">
+                <p>&copy; Copyright 2025 | Developed By PolyPedia</p>
+            </div>
+            <div class="uparrow">
+                <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+</body>
+
+</html>

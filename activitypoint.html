@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyPedia</title>
+    <!--FavIcon-->
+    <link rel="shortcut icon" href="./images/faviconn.webp" type="image/x-icon">
+    
+    <link rel="stylesheet" href="activitypoint.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/34a294b7be.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: #068550; color: white;">
+
+    <!--Navbar-->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <!-- Brand -->
+                <a class="navbar-brand ms-5" href="./home.html" id="nav-head">Poly<span>Pedia</span></a>
+
+                <!-- Toggler for responsive menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./home.html">HOME</a>
+                        </li>
+
+                        <!-- About -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">ABOUT</a>
+                        </li>
+
+                        <!-- Dropdown for Departments -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="departmentsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                DEPARTMENTS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                                <li><a class="dropdown-item" href="./departments/computer/computer.html">Computer
+                                        Engineering</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./departments/electronics/electronics.html">Electronics
+                                        Engineering</a></li>
+                                <li><a class="dropdown-item" href="./departments/mechanical/mechanical.html">Mechanical
+                                        Engineering</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./departments/civil/civil.html">Civil
+                                        Engineering</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Activity Point -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./activitypoint.html">ACTIVITY POINT</a>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">CONTACT</a>
+                        </li>
+                        <!-- Logout -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <!--Activity Point First Section-->
+    <section class="contact-section" style="margin-top: 65px;" id="activity">
+        <h2>Activity Point</h2>
+        <p>You Have To See How To Get Activity Points</p>
+        <div>
+            <a href="./images/activity-rev2021.pdf" class="btn border" download>Download Syllabus</a>
+            </a>
+        </div>
+    </section>
+
+    <!--Activity Point Section-->
+    <div class="container animate__animated animate__fadeIn" id="activity">
+        <div class="content-wrapper">
+            <div class="text-section animate__animated animate__fadeInLeft">
+                <h5 class="hero-text">Students need to earn a certain number of activity points through extracurricular
+                    and co-curricular activities to be eligible for their diploma.</h5>
+                <div class="card animate__animated animate__fadeInUp">
+                    <h3>Common Categories for Activity Points</h3>
+                    <div class="travel-box mt-3 animate__animated animate__fadeInUp">
+                        <h6 style="font-weight: bold; font-size: 20px;">1. Technical Activities</h6>
+                        <p>● Participation in Hackathons, Coding Contests, and Project Competitions</p>
+                        <p>● Attending Workshops, Seminars, and Industrial Visits</p>
+                        <p>● Internships and Industrial Training</p>
+                        <p>● Paper Presentations and Publications</p>
+                    </div>
+                    <div class="travel-box mt-3 animate__animated animate__fadeInUp animate__delay-1s">
+                        <h6 style="font-weight: bold; font-size: 20px;">2. Sports and Cultural Activities</h6>
+                        <p>● Participation in College/Inter-College Sports Competitions</p>
+                        <p>● Cultural Events (Music, Dance, Drama, Art, etc.)</p>
+                        <p>● NCC/NSS Activities</p>
+                    </div>
+                    <div class="travel-box mt-3 animate__animated animate__fadeInUp animate__delay-2s">
+                        <h6 style="font-weight: bold; font-size: 20px;">3. Social & Community Services</h6>
+                        <p>● Blood Donation Camps</p>
+                        <p>● Environment Awareness Programs</p>
+                        <p>● Volunteering in NGOs and Social Services</p>
+                    </div>
+                    <div class="travel-box mt-3 animate__animated animate__fadeInUp animate__delay-2s">
+                        <h6 style="font-weight: bold; font-size: 20px;">4. Entrepreneurship & Leadership Activities</h6>
+                        <p>● Organizing Technical and Non-Technical Events</p>
+                        <p>● Student Club Activities</p>
+                        <p>● Participation in Startup Events and Entrepreneurship Programs</p>
+                    </div>
+                    <div class="travel-box mt-3 animate__animated animate__fadeInUp animate__delay-2s">
+                        <h6 style="font-weight: bold; font-size: 20px;">5. Online Certifications and Courses</h6>
+                        <p>● Completion of Online Courses (Coursera, Udemy, NPTEL, etc.)</p>
+                        <p>● Earning Certifications from Recognized Platforms</p>
+                    </div>
+                    <div class="travel-box mt-3 animate__animated animate__fadeInUp animate__delay-2s">
+                        <h6 style="font-weight: bold; font-size: 20px;">6. Other Activities</h6>
+                        <p>● Publishing Blogs or Technical Articles</p>
+                        <p>● Working on Open Source Projects</p>
+                        <p>● Contributing to College Magazines or Newsletters</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="./images/activitypointimg.png" alt="Traveler" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Activity point third section -->
+    <div class="container d-flex justify-content-center align-items-center" style="margin-top: 100px;">
+        <div class="shadow-box p-4 bg-white text-dark rounded-3">
+            <h3 class="fw-bold">Upcoming Activities in 2025</h3>
+            <p>Here are some upcoming activities in 2025 that you can participate in to earn activity points:</p>
+            <b>1. Technical Fests:</b>
+            <p>NNOVISTA'25 at Arunai Engineering College, Tiruvannamalai (March 6, 2025)</p>
+            <p>NEURAVERSE'25 at Sethu Institute of Technology, Kariapatti (March 6, 2025)</p>
+            <p>Techxelarate 2025 at Kumaraguru College of Technology, Coimbatore (March 6, 2025)</p>
+            <p>Elecxy - 2K25 at Kamaraj College of Engineering and Technology, Virudhunagar (March 6, 2025)</p>
+            <p>CAD XTREME 2025 at Kumarguru College of Technology, Coimbatore (March 6, 2025)</p>
+            <p>laksh 2025 at Nirmala Institutions, Chalakudy (March 6, 2025)</p>
+            <p>MET FEST 2K25 at Sakthi Polytechnic College, Anthiyur (March 6, 2025)</p>
+            <p>INTERPRONIX 2K25 at K Ramakrishnan College of Engineering, Trichy (March 6, 2025)</p>
+            <p>CEANS 2K25 at Kongu Engineering College, Erode (March 7, 2025)</p>
+            <p>Technova 2025 at Shri Vishnu Engineering College for Women, Bhimavaram (March 7-8, 2025)</p>
+            <p>CodeToCreation 2025 at Bishop Heber College, Tiruchirappalli (March 7, 2025)</p>
+            <p>CRESCITA'25 at Kongu Engineering College, Erode (March 7, 2025)</p>
+            <p>HUNT MASTER 3.O at Kumaraguru College of Technology, Coimbatore (March 7, 2025)</p>
+            <p>Vortex 2025 at NIT Tiruchirappalli, Tiruchirappalli (March 7, 2025)</p>
+            <p>Srujana 2K25 at Pace Institute of Technology and Sciences (March 8, 2025).</p>
+
+            <b>2. National Level Technical Symposium:</b>
+            <p>TRIDENT 2K25 at Velammal Institute of Technology (February 28, 2025).</p>
+            <b>International Project Competition & Exhibition:</b>
+            <p>VISAI 2025 at Veltech University (February 24, 2025).</p>
+        </div>
+    </div>
+
+
+    <!--Footer Section-->
+    <footer class="footer text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>PolyPedia</h4>
+                    <p>Polytechnic Education focused website provides the
+                        all study materials offered.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/fab.fivez_?igsh=MXJzaXlqdzJic2N5"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./departments/computer/computer.html">Courses</a></li>
+                        <li><a href="./departments/computer/computer.html">Department</a></li>
+                        <li><a href="./departments/computer/s1maths.html">Subject Details</a></li>
+                        <li><a href="./departments/computer/s1chemistry.html">Notes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./contact.html">Contact Now</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Purchase Guide</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter to get the latest news &
+                        updates.</p>
+                    <input type="email" placeholder="Email address">
+                    <button class="mt-2 border rounded-3">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom ">
+            <p>&copy; Copyright 2025 | Developed By PolyPedia</p>
+        </div>
+        <div class="uparrow">
+            <a href="#activity"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                document.querySelector(".image-section").classList.add("show-image");
+            }, 500);
+        });
+
+    </script>
+</body>
+
+</html>

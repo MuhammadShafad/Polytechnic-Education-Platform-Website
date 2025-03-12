@@ -1,0 +1,215 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px 0;
+}
+
+#nav-head {
+    font-size: 25px;
+}
+
+#nav-head span {
+    color: #068550;
+    font-size: 28px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: #068550;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.navbar-nav .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 0.75rem;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar-nav.ml-auto {
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+/*Electronics First Section*/
+.contact-section {
+    background-image: url("./media/electronicsmain.jpeg");
+    background-size: cover;
+    text-align: center;
+    padding: 80px 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.contact-section h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.contact-section p {
+    color: white;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Electronics Second Section*/
+.category-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.category-title {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+.category-title::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #ffc107;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.category-card {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.category-card i {
+    font-size: 24px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.category-card:hover {
+    background-color: rgb(204, 152, 39);
+    color: white;
+}
+
+/*Footer Section*/
+.footer {
+    background-color: #092b25;
+    padding: 40px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 20px;
+}
+
+.newsletter input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 8px 15px;
+    border: none;
+    background-color: rgb(204, 152, 39);
+    color: white;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    /* padding: 10px 0; */
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+}
+
+.uparrow {
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+    float: right;
+    margin-right: 20px;
+    z-index: 10;
+}
+
+.uparrow i {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    color: rgb(24, 82, 100);
+}
+
+.uparrow a {
+    text-decoration: none;
+}

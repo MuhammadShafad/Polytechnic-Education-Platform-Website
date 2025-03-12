@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PolyPedia</title>
+    <link rel="stylesheet" href="computer.css">
+
+    <!--FavIcon-->
+    <link rel="shortcut icon" href="/images/faviconn.webp" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/34a294b7be.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bokor&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <!-- Brand -->
+                <a class="navbar-brand ms-5" href="/home.html" id="nav-head">Poly<span>Pedia</span></a>
+
+                <!-- Toggler for responsive menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- Home -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/home.html">HOME</a>
+                        </li>
+
+                        <!-- About -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">ABOUT</a>
+                        </li>
+
+                        <!-- Dropdown for Departments -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="departmentsDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                DEPARTMENTS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
+                                <li><a class="dropdown-item" href="./computer.html">Computer
+                                        Engineering</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/departments/electronics/electronics.html">Electronics
+                                        Engineering</a></li>
+                                <li><a class="dropdown-item" href="/departments/mechanical/mechanical.html">Mechanical
+                                        Engineering</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/departments/civil/civil.html">Civil
+                                        Engineering</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Activity Point -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/activitypoint.html">ACTIVITY POINT</a>
+                        </li>
+
+                        <!-- Contact -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">CONTACT</a>
+                        </li>
+                        <!-- Logout -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <!--Computer First Section-->
+    <section class="contact-section" style="margin-top: 70px;" id="computer">
+        <h2>Computer Engineering</h2>
+        <p>Explore Yourself What You Need</p>
+    </section>
+
+    <!--Computer Second Section-->
+    <div class="container py-5">
+        <div class="category-container">
+            <!--Semester 1-->
+            <h2 class="category-title">Semester 1</h2>
+            <div class="row mt-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="./s1chemistry.html" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Applied Chemistry
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="./s1maths.html" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Mathematics I
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="./s1physics.html" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Applied Physics I
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="./s1english.html" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Communication Skills in English
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--Semester 2-->
+            <h2 class="category-title">Semester 2</h2>
+            <div class="row mt-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="./s2maths.html" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Mathematics II
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Applied Physics II
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Environmental Science
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Fundamentals of Electrical & Electronics Engg
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Problem Solving & Programming
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--Semester 3-->
+            <h2 class="category-title">Semester 3</h2>
+            <div class="row mt-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Computer Organisation
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Programming in C
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Database Management Systems
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Digital Computer Fundamentals
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Web Technology lab
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--Semester 4-->
+            <h2 class="category-title">Semester 4</h2>
+            <div class="row mt-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Object Oriented Programming
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Computer Communication and Networks
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Data Structures
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--Semester 5-->
+            <h2 class="category-title">Semester 5</h2>
+            <div class="row mt-4 mb-4">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Project Management and Software Engineering
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Embedded System and Real time Operating System
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Operating System
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <div class="category-card">
+                            Virtualization Technology & Cloud Computing
+                            (Elective)
+                        </div>
+                    </a>
+                </div>
+                <!--Semester 6-->
+                <h2 class="category-title">Semester 6</h2>
+                <div class="row mt-4">
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <a href="#" style="text-decoration: none; color: black;">
+                            <div class="category-card">
+                                Introduction to IoT
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <a href="#" style="text-decoration: none; color: black;">
+                            <div class="category-card">
+                                Entrepreneurship and Startup
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-3">
+                        <a href="#" style="text-decoration: none; color: black;">
+                            <div class="category-card">
+                                Indian Constitution
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Section-->
+    <footer class="footer text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>PolyPedia</h4>
+                    <p>Polytechnic Education focused website provides the
+                        all study materials offered.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/fab.fivez_?igsh=MXJzaXlqdzJic2N5"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="./computer.html">Courses</a></li>
+                        <li><a href="./computer.html">Department</a></li>
+                        <li><a href="./s1maths.html">Subject Details</a></li>
+                        <li><a href="./s1chemistry.html">Notes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/contact.html">Contact Now</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Purchase Guide</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter to get the latest news &
+                        updates.</p>
+                    <input type="email" placeholder="Email address">
+                    <button class="mt-2 border rounded-3">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom ">
+            <p>&copy; Copyright 2025 | Developed By PolyPedia</p>
+        </div>
+        <div class="uparrow">
+            <a href="#computer"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
