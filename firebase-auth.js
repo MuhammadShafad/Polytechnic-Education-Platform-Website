@@ -59,7 +59,7 @@ document.getElementById("signUpForm").addEventListener("submit", function (event
     .catch((error) => {
       console.error("Error during sign-up:", error);
       if (error.code === "auth/email-already-in-use") {
-        showMessage("danger", "❌ This email is already registered. Please use a different email or sign in.");
+        showMessage("danger", "❌ This email is already in use(on first attempt of signup successful). Please use a different email or sign in.");
       } else {
         showMessage("danger", "❌ Sign-up failed: " + error.message);
       }
