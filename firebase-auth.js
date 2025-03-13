@@ -32,12 +32,16 @@ function showMessage(type, message) {
 // Sign Up Function
 document.getElementById("signUpForm").addEventListener("submit", function (event) {
   event.preventDefault();
+  console.log("Sign-up form submitted");
+
   const username = document.getElementById("signUpUsername").value;
   const email = document.getElementById("signUpEmail").value;
   const password = document.getElementById("signUpPassword").value;
 
+  console.log("Creating user...");
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
+      console.log("User created successfully", userCredential);
       const user = userCredential.user;
 
       // Save user details to database
@@ -48,10 +52,12 @@ document.getElementById("signUpForm").addEventListener("submit", function (event
       });
     })
     .then(() => {
+      console.log("User data saved to database");
       showMessage("success", "✅ Successfully Registered! You can now sign in.");
       document.getElementById("signUpForm").reset();
     })
     .catch((error) => {
+      console.error("Error during sign-up:", error);
       if (error.code === "auth/email-already-in-use") {
         showMessage("danger", "❌ This email is already registered. Please use a different email or sign in.");
       } else {
@@ -63,17 +69,22 @@ document.getElementById("signUpForm").addEventListener("submit", function (event
 // Sign In Function
 document.getElementById("signInForm").addEventListener("submit", function (event) {
   event.preventDefault();
+  console.log("Sign-in form submitted");
+
   const email = document.getElementById("signInEmail").value;
   const password = document.getElementById("signInPassword").value;
 
+  console.log("Signing in user...");
   signInWithEmailAndPassword(auth, email, password)
     .then(() => {
+      console.log("Sign-in successful");
       showMessage("success", "✅ Sign-in successful!");
       setTimeout(() => {
         window.location.href = "home.html"; // Redirect after success message
       }, 1500);
     })
     .catch((error) => {
+      console.error("Sign-in failed:", error);
       showMessage("danger", "❌ Sign-in failed: " + error.message);
     });
 });
